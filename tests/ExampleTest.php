@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Chrisdicarlo\LivewireAutocomplete\Tests;
 
 class ExampleTest extends TestCase
 {

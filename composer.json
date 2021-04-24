@@ -1,22 +1,22 @@
 {
-    "name": "vendor_slug/package_slug",
-    "description": ":package_description",
+    "name": "chrisdicarlo/livewire-autocomplete",
+    "description": "This is my package LivewireAutocomplete",
     "keywords": [
-        ":vendor_name",
+        "chrisdicarlo",
         "laravel",
-        "package_slug"
+        "livewire_autocomplete"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/chrisdicarlo/livewire-autocomplete",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Chris Di Carlo",
+            "email": "chris@dicarlosystems.ca",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^7.4|^8.0",
         "spatie/laravel-package-tools": "^1.4.3",
         "illuminate/contracts": "^8.0"
     },
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Chrisdicarlo\\LivewireAutocomplete\\": "src",
+            "Chrisdicarlo\\LivewireAutocomplete\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Chrisdicarlo\\LivewireAutocomplete\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +50,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Chrisdicarlo\\LivewireAutocomplete\\LivewireAutocompleteServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "LivewireAutocomplete": "Chrisdicarlo\\LivewireAutocomplete\\LivewireAutocompleteFacade"
             }
         }
     },
