@@ -2,9 +2,9 @@
 
 namespace Chrisdicarlo\LivewireAutocomplete\Tests;
 
+use Chrisdicarlo\LivewireAutocomplete\LivewireAutocompleteServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Chrisdicarlo\LivewireAutocomplete\LivewireAutocompleteServiceProvider;
 
 class TestCase extends Orchestra
 {

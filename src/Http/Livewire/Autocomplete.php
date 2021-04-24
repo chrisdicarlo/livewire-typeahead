@@ -30,6 +30,7 @@ abstract class Autocomplete extends Component
         if (strlen($this->search) < 2) {
             $this->results = collect();
             $this->showDropdown = false;
+
             return;
         }
 
