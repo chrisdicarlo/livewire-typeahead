@@ -2,7 +2,6 @@
 
 namespace ChrisDiCarlo\LivewireAutocomplete;
 
-use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -18,6 +17,5 @@ class LivewireAutocompleteServiceProvider extends PackageServiceProvider
         $package
             ->name('livewire-autocomplete')
             ->hasViews();
-
-        }
+    }
 }
