@@ -55,7 +55,7 @@
                     name: $refs.results.children[highlightedIndex].getAttribute('data-result-name')
                 })"
                     wire:model.debounce.300ms="search" type="search"
-                    class="block w-full pl-10 form-input sm:text-sm sm:leading-5" placeholder="Search clients..."
+                    class="block w-full pl-10 border-gray-300 rounded-md focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 sm:text-sm sm:leading-5" placeholder="Search clients..."
                     type="search">
             </div>
 
