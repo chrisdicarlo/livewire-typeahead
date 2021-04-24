@@ -4,7 +4,6 @@ namespace Chrisdicarlo\LivewireAutocomplete;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Chrisdicarlo\LivewireAutocomplete\Commands\LivewireAutocompleteCommand;
 
 class LivewireAutocompleteServiceProvider extends PackageServiceProvider
 {
