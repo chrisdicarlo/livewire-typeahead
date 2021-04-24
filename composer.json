@@ -17,26 +17,25 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "spatie/laravel-package-tools": "^1.4.3",
-        "illuminate/contracts": "^8.0"
+        "illuminate/contracts": "^8.0",
+        "livewire/livewire": "^2.4",
+        "spatie/laravel-package-tools": "^1.4.3"
     },
     "require-dev": {
         "brianium/paratest": "^6.2",
         "nunomaduro/collision": "^5.3",
         "orchestra/testbench": "^6.15",
         "phpunit/phpunit": "^9.3",
-        "spatie/laravel-ray": "^1.9",
         "vimeo/psalm": "^4.4"
     },
     "autoload": {
         "psr-4": {
-            "Chrisdicarlo\\LivewireAutocomplete\\": "src",
-            "Chrisdicarlo\\LivewireAutocomplete\\Database\\Factories\\": "database/factories"
+            "ChrisDiCarlo\\LivewireAutocomplete\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Chrisdicarlo\\LivewireAutocomplete\\Tests\\": "tests"
+            "ChrisDiCarlo\\LivewireAutocomplete\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +49,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Chrisdicarlo\\LivewireAutocomplete\\LivewireAutocompleteServiceProvider"
+                "ChrisDiCarlo\\LivewireAutocomplete\\LivewireAutocompleteServiceProvider"
             ],
             "aliases": {
-                "LivewireAutocomplete": "Chrisdicarlo\\LivewireAutocomplete\\LivewireAutocompleteFacade"
+                "LivewireAutocomplete": "ChrisDiCarlo\\LivewireAutocomplete\\LivewireAutocompleteFacade"
             }
         }
     },

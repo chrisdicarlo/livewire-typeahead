@@ -1,6 +1,6 @@
 <?php
 
-namespace Chrisdicarlo\LivewireAutocomplete;
+namespace ChrisDiCarlo\LivewireAutocomplete;
 
 class LivewireAutocomplete
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Chrisdicarlo\LivewireAutocomplete\Http\Livewire;
+namespace ChrisDiCarlo\LivewireAutocomplete\Http\Livewire;
 
 use Livewire\Component;
 
@@ -44,6 +44,6 @@ abstract class Autocomplete extends Component
 
     public function render()
     {
-        return view('livewire.autocomplete');
+        return view('livewire-autocomplete::livewire.autocomplete');
     }
 }
