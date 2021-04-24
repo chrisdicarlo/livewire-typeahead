@@ -10,6 +10,7 @@ abstract class Autocomplete extends Component
     public $search;
     public $selected;
     public $showDropdown;
+    public $placeholder = 'Search ...';
 
     abstract public function query();
 
