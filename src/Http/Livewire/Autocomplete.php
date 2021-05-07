@@ -2,6 +2,7 @@
 
 namespace ChrisDiCarlo\LivewireAutocomplete\Http\Livewire;
 
+use Exception;
 use Livewire\Component;
 
 abstract class Autocomplete extends Component
@@ -12,12 +13,27 @@ abstract class Autocomplete extends Component
     public $showDropdown;
     public $placeholder = 'Search ...';
 
+    protected $listeners = ['valueSelected'];
+
     abstract public function query();
 
-    public function mount()
+    public function mount($selected = null)
     {
         $this->showDropdown = false;
         $this->results = collect();
+
+        if ($selected) {
+            $this->selected = $selected;
+            $this->search = $selected->{$this->autocompleteText};
+        }
+    }
+
+    public function valueSelected($value)
+    {
+        if (! isset($this->parentListener)) {
+            throw new Exception('No parent listener defined to accept updated value(s)');
+        }
+        $this->emitUp($this->parentListener, $value);
     }
 
     public function updatedSelected()
