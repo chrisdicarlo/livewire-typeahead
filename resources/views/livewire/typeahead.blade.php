@@ -82,7 +82,7 @@
                         data-result-name="{{ $result->name }}"
                         x-on:click.stop="$dispatch('value-selected', {
                             id: {{ $result->id }},
-                            name: '{{ addslashes($result->{$TypeaheadText}) }}'
+                            name: '{{ addslashes($result->{$typeaheadText}) }}'
                         })"
                         class="relative py-2 pl-10 text-gray-900 cursor-default select-none pr-9 hover:bg-indigo-600 hover:text-white"
                         :class="{
