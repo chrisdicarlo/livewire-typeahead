@@ -2,6 +2,4 @@
 
 namespace ChrisDiCarlo\LivewireTypeahead;
 
-class LivewireTypeahead
-{
-}
+class LivewireTypeahead {}
